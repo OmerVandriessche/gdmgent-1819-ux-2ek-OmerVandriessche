@@ -4,10 +4,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Eindopdracht UX</title>
+    <title>Zeppelin</title>
+
+    <link type="text/css" rel="stylesheet" href="stylesheets/normalize.css">
+    <link type="text/css" rel="stylesheet" href="stylesheets/styles.css">
+    </link>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <a href="styleguide.html">styleguide</a>
+    <main>
+        <div class="landing__container">
+            <header>
+                <div class="navigation__items">
+                    <a href="index.html" class="home-icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home"
+                            class="svg-inline--fa fa-home fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 512">
+                            <path
+                                d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#" class="navigation__item">Info</a>
+                    <a href="#" class="navigation__item">Voorzieningen</a>
+                    <a href="#" class="navigation__item">Over ons</a>
+                    <a href="#" class="navigation__item">Contact</a>
+                    <a href="#" class="navigation__item">Extra</a>
+                    <a href="#" class="navigation__item">Kinderen</a>
+                    <div class="searchbar">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search"
+                            class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                            </path>
+                        </svg>
+                        <input type="text" />
+                    </div>
+                    <div class="navigation__icons__social">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter-square"
+                            class="svg-inline--fa fa-twitter-square fa-w-14" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square"
+                            class="svg-inline--fa fa-facebook-square fa-w-14" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
+                            class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </header>
+            <div class="landing__container__text">
+                <h1>Zeppelin</h1>
+                <p class="green">Een school om samen mee te vliegen!</p>
+                <p class="red">Vrije Basisschool Dentergem</p>
+            </div>
+
+            <a href="#" class="arrow-down"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                    data-icon="arrow-circle-down" class="svg-inline--fa fa-arrow-circle-down fa-w-16" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </main>
+    <section class="grid">
+        <div class="card blue">
+            <div class="card__image">
+                <img src="assets/images/absolutvision-82TpEld0_e4-unsplash.jpg" />
+            </div>
+            <div class="card__body">
+                <h1>Algemene info</h1>
+                <p>Hier vind u alle belangrijke schooldocumenten alsook de schooluren, de kalender en inschrijvingen.
+                </p>
+            </div>
+        </div>
+        <div class="card green">
+            <div class="card__image">
+                <img src="assets/images/adolescent-attractive-backpack-1462630.jpg" />
+            </div>
+            <div class="card__body">
+                <h1>Voorzieningen</h1>
+                <p>Van schoolmaaltijden tot naschoolse opvang, zelf informatie omtrent het CLB.
+                </p>
+            </div>
+        </div>
+        <div class="card red">
+            <div class="card__image">
+                <img src="assets/images/adult-brainstorming-businesswoman-515169.jpg" />
+            </div>
+            <div class="card__body">
+                <h1>Over ons
+                </h1>
+                <p>Raad van bestuur, leerkrachten en nog veel meer!
+                </p>
+            </div>
+        </div>
+        <div class="card yellow">
+            <div class="card__image">
+                <img src="assets/images/antique-black-communication-821754.jpg" />
+            </div>
+            <div class="card__body">
+                <h1>Contact
+                </h1>
+                <p>Hier vind u alle belangrijke schooldocumenten alsook de schooluren, de kalender en inschrijvingen.
+                </p>
+            </div>
+        </div>
+        <div class="card aqua">
+            <div class="card__image">
+                <img src="assets/images/xtra-inc-EDPU-nQ8ERc-unsplash.jpg" />
+            </div>
+            <div class="card__body">
+                <h1>Extra</h1>
+                <p>Kom gerust een kijkje nemen in onze gallerij! Daarnaast vind u tal van nuttige links.
+                </p>
+            </div>
+        </div>
+        <div class="card purple">
+            <div class="card__image">
+                <img src="assets/images/markus-spiske-KU3lOAiP-tQ-unsplash.jpg" />
+            </div>
+            <div class="card__body">
+                <h1>Kinderen</h1>
+                <p>Opzoek naar leuke herhalingsoefeningen of toffe spelletjes die verband hebben tot de leerstof? U vind
+                    ze hier!
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__container">
+            <a href="index.html" class="home-icon">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home"
+                    class="svg-inline--fa fa-home fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512">
+                    <path
+                        d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z">
+                    </path>
+                </svg>
+            </a>
+            <div class="footer__item">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="compass"
+                    class="svg-inline--fa fa-compass fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512">
+                    <path
+                        d="M225.38 233.37c-12.5 12.5-12.5 32.76 0 45.25 12.49 12.5 32.76 12.5 45.25 0 12.5-12.5 12.5-32.76 0-45.25-12.5-12.49-32.76-12.49-45.25 0zM248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm126.14 148.05L308.17 300.4a31.938 31.938 0 0 1-15.77 15.77l-144.34 65.97c-16.65 7.61-33.81-9.55-26.2-26.2l65.98-144.35a31.938 31.938 0 0 1 15.77-15.77l144.34-65.97c16.65-7.6 33.8 9.55 26.19 26.2z">
+                    </path>
+                </svg>
+                Statiestraat 53, 8720 Dentergem
+            </div>
+            <div class="footer__item">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope"
+                    class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <path
+                        d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                    </path>
+                </svg>
+                Info@vbszeppelin.be
+            </div>
+            <div class="footer__item">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone-square-alt"
+                    class="svg-inline--fa fa-phone-square-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path
+                        d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-16.39 307.37l-15 65A15 15 0 0 1 354 416C194 416 64 286.29 64 126a15.7 15.7 0 0 1 11.63-14.61l65-15A18.23 18.23 0 0 1 144 96a16.27 16.27 0 0 1 13.79 9.09l30 70A17.9 17.9 0 0 1 189 181a17 17 0 0 1-5.5 11.61l-37.89 31a231.91 231.91 0 0 0 110.78 110.78l31-37.89A17 17 0 0 1 299 291a17.85 17.85 0 0 1 5.91 1.21l70 30A16.25 16.25 0 0 1 384 336a17.41 17.41 0 0 1-.39 3.37z">
+                    </path>
+                </svg>
+                051 63 62 36
+            </div>
+            <div class="footer__item">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="address-book"
+                    class="svg-inline--fa fa-address-book fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path
+                        d="M436 160c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h320c26.5 0 48-21.5 48-48v-48h20c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20v-64h20c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20v-64h20zm-228-32c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H118.4C106 384 96 375.4 96 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2z">
+                    </path>
+                </svg>
+                Contact
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

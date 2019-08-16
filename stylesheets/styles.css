@@ -1,0 +1,308 @@
+body {
+  height: auto;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #E9E7EA;
+}
+
+header {
+  margin-top: 24px;
+}
+
+header .home-icon {
+  margin-right: 35px;
+}
+
+header .home-icon svg {
+  fill: #00A2E7;
+  width: 50px;
+  height: 50px;
+}
+
+.navigation__items {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation__items .navigation__item {
+  color: #C4C4C4;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 24px;
+  border: 1px solid #F26C22;
+  border-radius: 12px;
+  padding: 5px 10px;
+}
+
+.navigation__items .searchbar {
+  border: 1px solid #F26C22;
+  border-radius: 12px;
+  margin: 0 10px;
+  padding: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation__items .searchbar svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  fill: #00A2E7;
+}
+
+.navigation__items .searchbar input {
+  height: 26px;
+  width: 152px;
+  padding: 2px;
+  border-radius: 7px;
+  border: 1px solid #00A2E7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navigation__items .navigation__icons__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation__items .navigation__icons__social svg {
+  margin-right: 1px;
+  width: 19px;
+  height: 19px;
+  fill: #9D9D9D;
+}
+
+.landing__container {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../assets/images/plush-design-studio-l3N9Q27zULw-unsplash.jpg");
+  background-size: cover;
+  background-position: 0 -300px;
+  position: relative;
+}
+
+.landing__container .landing__container__text {
+  position: absolute;
+  left: 141px;
+  top: 211px;
+}
+
+.landing__container .landing__container__text h1 {
+  font-size: 6em;
+  font-weight: 600;
+  color: #00A2E7;
+  text-shadow: 2px 2px 4px rgba(120, 120, 120, 0.51);
+  margin-bottom: 0;
+}
+
+.landing__container .landing__container__text .green {
+  margin-left: 60px;
+  margin-bottom: 0;
+  color: #57B038;
+  font-size: 30px;
+}
+
+.landing__container .landing__container__text .red {
+  margin-top: 0;
+  margin-left: 60px;
+  color: #E34048;
+  font-size: 24px;
+}
+
+a.arrow-down {
+  position: absolute;
+  bottom: 100px;
+}
+
+a.arrow-down svg {
+  fill: #F26C22;
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  background: #F26C22;
+  padding: 1em 0;
+}
+
+footer .footer__container {
+  margin: 0 auto;
+  width: 66%;
+  color: #FFFBFB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__container svg {
+  width: 30px;
+  height: 30px;
+  fill: #FFFBFB;
+}
+
+footer .footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__item svg {
+  margin-right: 15px;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 472px 472px;
+      grid-template-columns: 472px 472px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  justify-items: center;
+  grid-gap: 75px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 75px 0;
+}
+
+.card {
+  grid-column: span 1;
+  width: 100%;
+  max-width: 472px;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Leelawadee', sans-serif;
+}
+
+.card .card__body {
+  margin-top: 10px;
+  background: #FFFBFB;
+  height: 150px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+}
+
+.card .card__body p {
+  color: #9D9D9D;
+}
+
+.card.blue {
+  color: #00A2E7;
+  border: 1px solid #00A2E7;
+}
+
+.card.blue .card__body {
+  border: 1px solid #00A2E7;
+}
+
+.card.green {
+  color: #57B038;
+  border: 1px solid #57B038;
+}
+
+.card.green .card__body {
+  border: 1px solid #57B038;
+}
+
+.card.red {
+  color: #E34048;
+  border: 1px solid #E34048;
+}
+
+.card.red .card__body {
+  border: 1px solid #E34048;
+}
+
+.card.yellow {
+  color: #BCAC17;
+  border: 1px solid #BCAC17;
+}
+
+.card.yellow .card__body {
+  border: 1px solid #BCAC17;
+}
+
+.card.aqua {
+  color: #40B9AD;
+  border: 1px solid #40B9AD;
+}
+
+.card.aqua .card__body {
+  border: 1px solid #40B9AD;
+}
+
+.card.purple {
+  color: #AB0CD1;
+  border: 1px solid #AB0CD1;
+}
+
+.card.purple .card__body {
+  border: 1px solid #AB0CD1;
+}
+
+.card .card__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  height: 414px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card .card__image img {
+  height: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
