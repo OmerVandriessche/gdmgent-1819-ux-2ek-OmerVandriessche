@@ -7,3 +7,155 @@
 @import url('components/buttons.css');
 @import url('components/forms.css');
 
+/* -------------------------------- Style guide -------------------------------- */
+/* --- Kleuren --- */
+.kleur-card {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+    border-radius: 2%;
+}
+
+#blauw {
+    background-color: #00A2E7;
+}
+
+#groen {
+    background-color: #57B038;
+}
+
+#rood {
+    background-color: #E34048;
+}
+
+#oranje {
+    background-color: #F26C22;
+}
+
+#licht-grijs {
+    background-color: #9D9D9D;
+}
+
+#geel {
+    background-color: #BCAC17;
+}
+
+#abzg {
+    background-color: #11E8A6;
+}
+
+#paars {
+    background-color:#AB0CD1;
+}
+
+
+
+/* --- Typografie --- */
+#titel {
+    text-align: left;
+    font: Semibold 68px/90px Segoe UI;
+    letter-spacing: 0;
+    color: #00A2E7;
+    opacity: 1;
+}
+
+#titel-top-card {
+    top: 4032px;
+    left: 170px;
+    width: 206px;
+    height: 39px;
+    text-align: left;
+    font: Semibold 30px/40px Segoe UI;
+    letter-spacing: 0;
+    color: #57B038;
+    opacity: 1;
+}
+
+#titel-card {
+    text-align: left;
+    font: Semibold 30px/40px Segoe UI;
+    letter-spacing: 0;
+    color: #E34048;
+    opacity: 1;
+}
+
+#titel-p {
+    left: 266px;
+    width: 857px;
+    height: 32px;
+    text-align: left;
+    font: Semibold 22px/24px Segoe UI;
+    letter-spacing: 0;
+    color: #3B3B3B;
+    opacity: 1;
+}
+
+#tekst {
+    top: 1217px;
+    left: 266px;
+    width: 857px;
+    height: 169px;
+    text-align: left;
+    font: Regular 14px/24px Segoe UI;
+    letter-spacing: 0;
+    color: #848282;
+    opacity: 1;
+}
+
+
+
+/* --- Formulieren --- */
+.formulier {
+    top: 769px;
+    left: 150px;
+    width: 680px;
+    height: 135px;
+    background: rgb(226, 221, 221) 0% 0% no-repeat padding-box;
+    box-shadow: 2px 2px 2px #000000;
+    border-radius: 0px 50px;
+    opacity: 1;
+}
+
+.form-titel {
+    top: 793px;
+    left: 174px;
+    width: 159px;
+    height: 30px;
+    text-align: left;
+    font: Semibold 20px/24px Segoe UI;
+    letter-spacing: 0;
+    color: #848282;
+    opacity: 1;
+    padding: 24px;
+    padding-bottom: 0px;
+}
+
+.antwoord {
+    top: 829px;
+    left: 200px;
+    width: 599px;
+    height: 44px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #000000;
+    border: 1px solid #9D9D9D;
+    border-radius: 3px;
+    opacity: 1;
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-top: -10px;
+}
+
+.antwoord-tekst {
+    top: 839px;
+    left: 213px;
+    width: 134px;
+    height: 24px;
+    text-align: left;
+    font: Regular 18px/24px Segoe UI;
+    letter-spacing: 0;
+    color: #9D9D9D;
+    padding-left: 13px;
+    margin-bottom: 20px;
+}
